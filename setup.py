@@ -13,7 +13,7 @@ requirements = [
 
 setup(
     name='radiojavanapi',
-    version='0.5.10',
+    version='0.5.11',
     author='xHossein',
     license='MIT',
     url='https://github.com/xHossein/radiojavanapi',
