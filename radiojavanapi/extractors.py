@@ -32,7 +32,7 @@ def extract_song(data) -> Song:
     if type(album) == dict:
         album = album.pop('album', None)
     data["album"] = album if album else data.pop('album', None)
-    data["plays"] = to_int(data.pop('plays'))
+    data["plays"] = to_int(data.pop('plays', 0))
     data["name"] = data.pop('song')
     data["likes"] = to_int(data.pop('likes'))
     data["dislikes"] = to_int(data.pop('dislikes'))
